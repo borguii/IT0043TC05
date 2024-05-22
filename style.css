@@ -19,7 +19,8 @@ body {
 .container {
     gap: 20px;
     max-width: 1200px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card {
