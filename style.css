@@ -1,0 +1,119 @@
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #504949;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 100vh;
+
+}
+
+.container {
+    gap: 20px;
+    max-width: 1200px;
+    display: inline-block;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    
+
+}
+
+.image{
+    background-image: url(./R.png);
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+}
+
+.card img {
+    width: 100px;
+    height: 180px;
+}
+
+.card h2 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.type {
+    padding: 2px 5px;
+    border-radius: 3px;
+    width: 22%;
+    color: #fff;
+    display: inline-block;
+}
+
+
+.type.psychic {
+    background-color: #99447f;
+}
+
+.type.poison {
+    background-color: #631063;
+}
+
+.type.fire {
+    background-color: #F08030;
+}
+
+.type.water {
+    background-color: #6890F0;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buttons .add:hover {
+    opacity: 0.3;
+
+}
+
+.buttons .release:hover {
+    opacity: 0.3;
+
+}
+
+
+.add {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.release {
+    background-color: #f44336;
+    color: white;
+}
+
+.details{
+    width:100%;
+    padding: 20px;
+}
+
+.details.pink{
+    background-color: pink;
+    border-radius: 1px;
+}
+
+
