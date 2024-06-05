@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#grid-container {
+    width: 85vw;
+    height: 95vh auto;
+    margin: 20px auto;
+    background-color: rgb(156, 156, 156);
+    outline: 8px solid rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(187, 134, 143);
+    text-align: center;
+    box-shadow: 1px 2px 3px grey;
+    border-radius: 8px;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 175, 218);
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.titles1{
+    padding-top: 80px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .name {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.type {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.desc {
+    font-size: 12px;
+}
+
+img {
+    width: 100px;
+
+}
+
+.item:hover {
+    color: white;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.one {
+    background-color: rgb(181, 189, 235);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+    /* display: inline-block; */
+}
+
+.two {
+    background-color: plum;
+}
+
+.three {
+    background-color: burlywood;
+}
+
+
+.four {
+    background-color: gainsboro;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.five {
+    background-color: pink;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+@media (max-width:740px){
+    .
+}
