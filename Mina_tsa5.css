@@ -5,28 +5,31 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
 
-#grid-container {
+
+
+}
+
+
+
+#container {
     width: 85vw;
-    height: 95vh auto;
     margin: 20px auto;
     background-color: rgb(156, 156, 156);
     outline: 8px solid rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
-
+    padding: 10px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border: 1px solid rgb(187, 134, 143);
-    text-align: center;
+    border-radius: 15px;
     box-shadow: 1px 2px 3px grey;
-    border-radius: 8px;
     color: black;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,12 +39,26 @@
 
 }
 
-.titles1{
-    padding-top: 80px;
-    padding-left: 10px;
+.desc {
+    text-align: justify;
+    line-height: 1.5;
+    padding: 5px;
+}
+
+#giyuu .details, #obanai .details{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+}
+
+.name {
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.type {
+    font-size: 1rem;
 }
 
 /* .name {
@@ -58,9 +75,8 @@
     align-items: center;
 } */
 
-.desc {
-    font-size: 12px;
-}
+/* .desc {
+    font-size: 12px; */
 
 img {
     width: 100px;
@@ -72,48 +88,126 @@ img {
 }
 
 .details{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+    text-align: center;
 
 }
 
-.one {
+#giyuu {
     background-color: rgb(181, 189, 235);
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-end: 2;
 
     /* display: inline-block; */
 }
 
-.two {
+#nezuko {
     background-color: plum;
 }
 
-.three {
+#inosuke {
     background-color: burlywood;
 }
 
 
-.four {
+#obanai {
     background-color: gainsboro;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: 3;
 }
 
-.five {
+#shinobu {
     background-color: pink;
     grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
 
 }
 
 @media (max-width:740px){
-    .
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #giyuu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #nezuko {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #inosuke {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #obanai {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-start: 3;
+    }
+    #shinobu {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media (max-width: 540px){
+
+    #giyuu .details, #nezuko .details, #inosuke .details, #obanai .details, #shinobu .details {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    
+    }
+
+    #giyuu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    #nezuko {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #inosuke {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    #obanai {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-start: 5;
+    }
+    #shinobu {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
 }
