@@ -1,20 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-
-
-
-}
+body {}
 
 
 
 #container {
-    width: 85vw;
+    width: 85vw auto;
     margin: 20px auto;
     background-color: rgb(156, 156, 156);
     outline: 8px solid rgb(255, 255, 255);
@@ -45,7 +41,8 @@ body {
     padding: 5px;
 }
 
-#giyuu .details, #obanai .details{
+#giyuu .details,
+#obanai .details {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +84,7 @@ img {
     color: white;
 }
 
-.details{
+.details {
     text-align: center;
 
 }
@@ -128,35 +125,47 @@ img {
 
 }
 
-@media (max-width:740px){
+@media (max-width:950px) {
     .container {
         grid-template-columns: 1fr 1fr;
     }
 
+
+    .item {
+        flex-grow: 5;
+        flex-direction: column;
+        /* text-align: center; */
+        display: flex;
+    }
+        
     #giyuu {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
     }
+
     #nezuko {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
+
     #inosuke {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+
     #obanai {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
-        grid-row-start: 3;
+        grid-row-start: 2;
     }
+
     #shinobu {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -165,9 +174,13 @@ img {
     }
 }
 
-@media (max-width: 540px){
+@media (max-width: 750px) {
 
-    #giyuu .details, #nezuko .details, #inosuke .details, #obanai .details, #shinobu .details {
+    #giyuu .details,
+    #nezuko .details,
+    #inosuke .details,
+    #obanai .details,
+    #shinobu .details {
         flex-direction: row;
         display: flex;
         justify-content: center;
@@ -175,9 +188,9 @@ img {
         gap: 30px;
     }
 
-    .container{
+    .container {
         grid-template-columns: 1fr;
-    
+        grid-template-rows: 1fr;
     }
 
     #giyuu {
@@ -186,24 +199,28 @@ img {
         grid-row-start: 1;
         grid-row-end: 2;
     }
+
     #nezuko {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+
     #inosuke {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
     }
+
     #obanai {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-start: 5;
     }
+
     #shinobu {
         grid-column-start: 1;
         grid-column-end: 2;
