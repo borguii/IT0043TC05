@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Manipulator</title>
+    <link rel="stylesheet" href="tsa7.css">
+</head>
+
+<body>
+    <div id="main-container" class="container">
+        <div class="flexbox item" id="flex1">1</div>
+        <div class="flexbox item" id="flex2">2</div>
+        <div class="flexbox item" id="flex3">3</div>
+    </div>
+    <div id="controls" class="controls">
+        <button id="reset" class="btn-action" onclick="resetFlexbox()">Reset Flexbox</button>
+        <div class="control-group">
+            <label for="gap">Gap:</label>
+            <input type="number" id="gap" value="0" min="0" onchange="modifyGap()">
+        </div>
+        <div class="control-group">
+            <p>Flex Direction:</p>
+            <button onclick="setFlexDirection('row')">Horizontal</button>
+            <button onclick="setFlexDirection('column')">Vertical</button>
+        </div>
+        <div class="control-group">
+            <p>Justify Content:</p>
+            <button onclick="setJustifyContent('flex-start')">Flex Start</button>
+            <button onclick="setJustifyContent('center')">Center</button>
+            <button onclick="setJustifyContent('flex-end')">Flex End</button>
+            <button onclick="setJustifyContent('space-between')">Space Between</button>
+            <button onclick="setJustifyContent('space-around')">Space Around</button>
+            <button onclick="setJustifyContent('space-evenly')">Space Evenly</button>
+        </div>
+        <div class="control-group">
+            <p>Align Items:</p>
+            <button onclick="setAlignItems('flex-start')">Align Start</button>
+            <button onclick="setAlignItems('center')">Align Center</button>
+            <button onclick="setAlignItems('flex-end')">Align End</button>
+        </div>
+        <div class="control-group">
+            <p>Flex Grow:</p>
+            <label for="grow1">Flexbox 1:</label>
+            <input type="number" id="grow1" value="0" min="0" onchange="adjustFlexGrow(1)">
+            <label for="grow2">Flexbox 2:</label>
+            <input type="number" id="grow2" value="0" min="0" onchange="adjustFlexGrow(2)">
+            <label for="grow3">Flexbox 3:</label>
+            <input type="number" id="grow3" value="0" min="0" onchange="adjustFlexGrow(3)">
+        </div>
+    </div>
+    <script src="tsa7.js"></script>
+</body>
+
+</html>
