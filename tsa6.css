@@ -6,8 +6,6 @@
 
 body {
     font-family: 'Comic Neue', cursive;
-    background: url('https://i.imgur.com/0vZZq1P.jpg') no-repeat center center fixed; /* Main background image */
-    background-size: cover;
     color: #333;
 }
 
