@@ -114,6 +114,8 @@
 .nav-links {
 margin-right: 70px;
 padding-right: 70px;
+list-style: none;
+display: flex;
 }
 
 .toggle .line1 {
@@ -155,6 +157,8 @@ padding-right: 70px;
 .burger {
     display: none;
     cursor: pointer;
+    flex-direction: column;
+    
 }
 
 .burger div {
@@ -163,6 +167,7 @@ padding-right: 70px;
     background-color: #ffffff;
     margin: 5px;
     transition: all 0.3s ease;
+    margin-right: 30px;
 }
 
 .hero {
@@ -698,7 +703,6 @@ transform: 2.6s;
 
 
 @media (max-width: 768px) {
-
     .nav-links {
         display: none;
         flex-direction: column;
@@ -724,7 +728,8 @@ transform: 2.6s;
     }
 
     .burger {
-        display: block;
+        display: flex;
+        margin-right: 30px;
     }
 
     .services-container, .portfolio-container {
